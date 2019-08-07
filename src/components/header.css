@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Rasa|Roboto&display=swap');
+
+.nav-container{
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    width: 85vw;
+    padding-top: 1vh;
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-items a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
+.nav-spacer {
+    width: 2vw;
+}
+
+.logo {
+    margin-left: auto;
+    font-family: 'Rasa', serif;
+    color: whitesmoke;
+}
+
+.active-nav-link {
+    color: black;
+    background-color: whitesmoke;
+}
+

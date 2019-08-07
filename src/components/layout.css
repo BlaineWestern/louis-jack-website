@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: black;
 }
 body {
   margin: 0;
@@ -615,8 +616,33 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: whitesmoke;
+  padding: 1vw;
+  font-family: 'Rasa', serif;
+}
+
+main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85vw;
+  height: calc(85vw * .5625);
+  border-style: solid;
+  border-width: 2px;
+  border-color: whitesmoke; 
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
+
+
