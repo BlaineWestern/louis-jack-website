@@ -6,6 +6,7 @@ import "./header.css"
 const Header = ({ siteTitle }) => (
   <header className="nav-container">
     <div className="nav-items">
+    <div className="nav-spacer"></div>
     <div ><Link to="/films" className="link" activeStyle={{ color: "black" , backgroundColor: "whitesmoke"}} >FILMS</Link></div>
     <div className="nav-spacer"></div>
     <div ><Link to="/about" className="link" activeStyle={{ color: "black" , backgroundColor: "whitesmoke"}} >ABOUT</Link></div>
