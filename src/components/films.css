@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Rasa|Roboto&display=swap');
+
+.films-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.film-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.film-info {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+    height:100%;
+}
+
+.film-titles {
+    padding-left: 1.8vw;
+    padding-top: 1.8vw;
+}
+
+.film-titles button {
+    display: block;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.film-titles button:focus {
+    outline: 0;
+    padding:0;
+}
+
+.button-selected{
+    background: whitesmoke;
+    color: black;
+    padding:0;
+}
+
+.button-deselected{
+    background: black;
+    color: whitesmoke;
+    padding:0;
+}
+
+
+.film-info-content-invisible {
+    display: none;
+}
+
+.film-info-content-visible{
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 1.8vw 5vw 1.8vw 5vw;
+    height: 100%;
+    overflow: auto;
+}
+
+.film-unit-body{
+    /* position: absolute; */
+    overflow: auto;
+}
+
+.film-info-content-visible a {
+    position: inherit;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.film-info-content-visible a:hover {
+    color: black;
+    background-color:  whitesmoke;
+}

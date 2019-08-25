@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 import ReactPlayer from 'react-player'
 import Layout from '../components/layout'
+import FilmPlayer from '../components/FilmPlayer'
 
 export const query = graphql`
 query (
@@ -11,7 +12,7 @@ query (
     contentfulFilms(slug: {eq: $slug}) {
       title,
       url,
-      yearMade,
+      yearMade(formatString: "YYYY"),
       description {
         childMarkdownRemark {
         html
@@ -28,7 +29,7 @@ const Film = (props) => {
     return (
     <Layout>
         <SEO title={props.data.contentfulFilms.title} />
-        <ReactPlayer url={props.data.contentfulFilms.url} playing width='100%' height='100%' />    
+        <FilmPlayer data={props.data} />  
     </Layout>
     )
 }

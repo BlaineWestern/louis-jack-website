@@ -1,0 +1,32 @@
+.biography-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.about-title {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.biography {
+    overflow: auto;
+    height: 100%;
+    padding: 70px;
+}
+
+.biography-text p{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mailing-list-link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mailing-list-link:hover {
+    color: black;
+    background-color: whitesmoke;
+}
