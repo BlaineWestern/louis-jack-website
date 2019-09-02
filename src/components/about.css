@@ -35,6 +35,12 @@
     text-decoration: underline;
 }
 
+@media only screen and (max-height: 480px) {
+    .biography {
+        padding-left: 20vh;
+    }
+}
+
 @media only screen and (max-width: 780px) {
     .biography {
         padding-left: 61px;

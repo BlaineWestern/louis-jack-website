@@ -18,18 +18,6 @@
     padding-top: 1vh;
 }
 
-@media only screen and (max-height: 480px) {
-    .nav-container{
-        width: calc(80vh * 1.777)
-    }
-}
-
-@media only screen and (max-width: 780px) {
-    .nav-container{
-        width: 100%;
-    }
-}
-
 .nav-items{
     display: flex;
 }
@@ -59,3 +47,15 @@
     background-color: whitesmoke;
 }
 
+@media only screen and (max-width: 780px) {
+    .nav-container{
+        width: 100vw;
+    }
+}
+
+
+@media only screen and (max-height: 480px) {
+    .nav-container{
+        width: calc(80vh * 1.777)
+    }
+}
