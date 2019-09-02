@@ -27,9 +27,9 @@ export default function about() {
         <SEO title="About" />
         <div className="biography-container">
         <div className="biography">   
-        <p className="about-title">BIOGRAPHY</p>
+        <p className="about-title">BIOGRAPHY :</p>
         <div className="biography-text" dangerouslySetInnerHTML={{__html: data.allContentfulAbout.edges[0].node.biography.childMarkdownRemark.html }}/>
-        <a className="mailing-list-link" href={data.allContentfulAbout.edges[0].node.mailingListUrl} target="_blank">NEWSLETTER</a>
+        <a className="mailing-list-link" href={data.allContentfulAbout.edges[0].node.mailingListUrl} target="_blank">> NEWSLETTER</a>
         </div>
         </div>        
     </Layout>

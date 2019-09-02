@@ -24,8 +24,10 @@ export default function contact() {
         <SEO title="Contact" />
         <div className="contact-container">
         <div className="contact">   
-        <p className="link-title">LINKS</p>
-        {data.allContentfulContact.edges.map(x => <div className="contact-unit"><p>{x.node.platform}: {x.node.address}</p></div>)}
+        <p className="link-title">LINKS :</p>
+        <div className="contact-unit-container">
+        {data.allContentfulContact.edges.map(x => <div className="contact-unit"><p>{x.node.platform}:<br/> {x.node.address}</p></div>)}
+        </div>
         </div>
         </div>  
     </Layout>

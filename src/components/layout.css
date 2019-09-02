@@ -43,10 +43,11 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  cursor: pointer;
 }
 a:active,
 a:hover {
-  outline-width: 0;
+  cursor: pointer;
 }
 abbr[title] {
   border-bottom: none;
@@ -617,32 +618,109 @@ pre tt:after {
   content: "";
 }
 
-footer {
+.footer {
   position: fixed;
-  bottom: 0;
+  bottom: 0%;
   right: 0;
+  transform: translate(0, 100%);
+  text-align: right;
   color: whitesmoke;
-  padding: 1vw;
-  font-family: 'Rasa', serif;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 1vh;
+  font-family: 'Grafier', italic;
 }
 
 main {
+  background-color: black;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 85vw;
-  height: calc(85vw * .5625);
+  width: 80vw;
+  height: calc(80vw * .5625);
   border-style: solid;
   border-width: 2px;
   border-color: whitesmoke; 
-  overflow: hidden;
 }
+
+
 
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
+
+}
+
+@media only screen and (max-width: 780px) {
+  html {
+    font-size: 100%;
+  }
+  p{
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  a{ 
+    font-size: 15px;
+  }
+
+  main {
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: calc(100vw * .5625);
+  }
+
+  .footer {
+    font-size: 9px;
+    padding-top: 2px;
+    padding-bottom: 1vh;
+    font-family: 'Grafier', italic;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  p{
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 13px;
+  }
+
+  a{ 
+    font-size: 13px;
+  }
 }
 
 
+@media only screen and (max-height: 480px) {
+  main {
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(80vh * 1.777);
+    height: 80vh;
+  }
+  p{
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  a{ 
+    font-size: 15px;
+  }
+}

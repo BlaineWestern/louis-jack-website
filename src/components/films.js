@@ -30,8 +30,9 @@ handleClick(e) {
             { this.props.data.allContentfulFilms.edges.map(x => 
                 <div className={this.state.visibility == x.node.slug ? "film-info-content-visible" : "film-info-content-invisible"}>
                 <div className="film-unit-body">
+                <p>DESCRIPTION :</p>  
                 <div className="film-unit-description" dangerouslySetInnerHTML={{__html: x.node.description.childMarkdownRemark.html }} />
-                <Link to={`/films/${x.node.slug}`}>WATCH</Link>
+                <Link to={`/films/${x.node.slug}`}>> WATCH</Link>
                 </div>
                 </div>
                 )}

@@ -8,6 +8,28 @@
     overflow: auto;
     height: 100%;
     color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
-    padding: 70px;
+    font-family: 'Aktiv Grotesk';
+    padding-top: 3.8vw;
+    padding-left: 191px;
+}
+
+.contact-unit-container {
+    padding-left: 205px;
+    padding-top: 3.8vw;
+}
+
+.contact-unit {
+    width: 20vw;       
+}
+
+@media only screen and (max-width: 780px) {
+    .contact{
+        padding-left: 120px;
+    }
+    .contact-unit-container {
+        padding-left: 120px;
+    }
+    .contact-unit {
+        width: 40vw;       
+    }
 }

@@ -31,7 +31,7 @@
 }
 
 .film-title p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Aktiv Grotesk';
     background: whitesmoke;
     color: black;
 }
@@ -64,7 +64,7 @@
     border: none;
     text-decoration: none;
     cursor: pointer;
-    z-index: 25;
+    z-index: 20;
 }
 
 .info-toggle-button img {
@@ -74,7 +74,6 @@
 
 .info-toggle-button:focus {
     outline: 0;
-    padding:0;
 }
 
 .info-toggle-button-close {
@@ -96,7 +95,6 @@
 
 .info-toggle-button-close:focus {
     outline: 0;
-    padding:0;
 }
 
 .expand-button {
@@ -118,7 +116,6 @@
 
 .expand-button:focus {
     outline: 0;
-    padding:0;
 }
 
 .film-template-info {
@@ -137,7 +134,7 @@
 
 .film-description {
     color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Aktiv Grotesk';
     overflow: auto;
     height:100%;
     padding: 80px 70px 0px 70px;
@@ -147,3 +144,48 @@
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
+@media only screen and (max-width: 780px) {
+    .expand-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button-close img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .pause-play-button img {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+@media only screen and (max-height: 480px) {
+    .expand-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button-close img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .pause-play-button img {
+        width: 25px;
+        height: 25px;
+    }
+  }

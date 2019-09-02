@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Rasa|Roboto&display=swap');
-
 .films-wrapper {
     width: 100%;
     height: 100%;
@@ -11,17 +9,20 @@
     height: 100%;
     overflow: auto;
 }
+.film-titles {
+    overflow: auto;
+}
 
 .film-info {
     color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Aktiv Grotesk';
     overflow: auto;
     height:100%;
 }
 
 .film-titles {
     padding-left: 1.8vw;
-    padding-top: 1.8vw;
+    padding-top: 3.8vw;
 }
 
 .film-titles button {
@@ -30,9 +31,13 @@
     text-align: left;
     text-decoration: none;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Aktiv Grotesk';
     margin-bottom: 10px;
 }
+
+/* .film-titles button:hover {
+text-decoration: underline;
+} */
 
 .film-titles button:focus {
     outline: 0;
@@ -45,12 +50,19 @@
     padding:0;
 }
 
+.button-selected:hover{
+    text-decoration: none;
+}
+
 .button-deselected{
     background: black;
     color: whitesmoke;
     padding:0;
 }
 
+.button-deselected:hover{
+    text-decoration: underline;
+}
 
 .film-info-content-invisible {
     display: none;
@@ -60,13 +72,12 @@
     display: block;
     position: absolute;
     top: 0;
-    padding: 1.8vw 5vw 1.8vw 5vw;
+    padding: 3.8vw 5vw 1.8vw 5vw;
     height: 100%;
     overflow: auto;
 }
 
 .film-unit-body{
-    /* position: absolute; */
     overflow: auto;
 }
 
@@ -74,9 +85,16 @@
     position: inherit;
     color: whitesmoke;
     text-decoration: none;
+    padding-bottom: 7.4vw;
 }
 
 .film-info-content-visible a:hover {
-    color: black;
-    background-color:  whitesmoke;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 780px) {
+    .film-titles {
+        width: 25vw;
+        overflow: auto;
+    }
 }
