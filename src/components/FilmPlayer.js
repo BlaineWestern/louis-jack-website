@@ -219,7 +219,6 @@ export default class FilmPlayer extends Component {
                 <input 
                 class="input-range" 
                 type="range" 
-                value={played} 
                 step='any' 
                 min={0} 
                 max={1} 
