@@ -1,0 +1,197 @@
+.event-listener{
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.video-container{
+    width:100%;
+    height: 100%;
+}
+
+.video-controls{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 10;
+}
+
+.video-controls-hidden{
+    opacity: 0;
+}
+
+.film-title {
+    position: absolute;
+    z-index: 20;
+    top: 15px;
+    left: 15px;
+}
+
+.film-title p{
+    font-family: 'Aktiv Grotesk';
+    background: whitesmoke;
+    color: black;
+}
+
+.pause-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    background: none;
+    display: block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pause-play-button:focus {
+    outline: 0;
+    padding:0;
+}
+
+.info-toggle-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    display: block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.info-toggle-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.info-toggle-button:focus {
+    outline: 0;
+}
+
+.info-toggle-button-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    display: block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.info-toggle-button-close img {
+    width: 25px;
+    height: 25px;
+}
+
+.info-toggle-button-close:focus {
+    outline: 0;
+}
+
+.expand-button {
+    position: absolute;
+    bottom: -9px;
+    right: 25px;
+    background: none;
+    display: block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 55;
+}
+
+.expand-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.expand-button:focus {
+    outline: 0;
+}
+
+.film-template-info {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index: 40;
+    background-color: black;
+    opacity: .9;
+}
+
+.no-display {
+ display: none;
+}
+
+.film-description {
+    color: whitesmoke;
+    font-family: 'Aktiv Grotesk';
+    overflow: auto;
+    height:100%;
+    padding: 80px 70px 0px 70px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+@media only screen and (max-width: 780px) {
+    .expand-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button-close img {
+        width: 17px;
+        height: 14px;
+    }
+
+    .pause-play-button img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .expand-button {
+        position: absolute;
+        bottom: -15px;
+        right: 12px;
+    }
+
+}
+
+@media only screen and (max-height: 480px) {
+    .expand-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .info-toggle-button-close img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .pause-play-button img {
+        width: 25px;
+        height: 25px;
+    }
+  }

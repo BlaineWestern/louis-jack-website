@@ -1,0 +1,48 @@
+.biography-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.about-title {
+    color: whitesmoke;
+    font-family: 'Aktiv Grotesk';
+}
+
+.biography {
+    overflow: auto;
+    height: 100%;
+    padding-top: 3.8vw;
+    padding-left: 105px;
+    padding-right: 7.4vw;
+    padding-bottom: 7.4vw
+}
+
+.biography-text p{
+    padding-left: 30px;
+    color: whitesmoke;
+    font-family: 'Aktiv Grotesk';
+}
+
+.mailing-list-link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Aktiv Grotesk';
+}
+
+.mailing-list-link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-height: 480px) {
+    .biography {
+        padding-left: 20vh;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .biography {
+        padding-left: 61px;
+    }
+}
