@@ -8,6 +8,11 @@
     src: url("../fonts/AktivGrotesk-Regular.ttf");
   }
 
+  @font-face {
+    font-family: "Neue Montreal";
+    src: url("../fonts/NeueMontreal-Regular.otf");
+  }
+
 .nav-container{
     position: fixed;
     top:0;
@@ -24,7 +29,7 @@
 
 .nav-items a{
     text-decoration: none;
-    font-family: 'Aktiv Grotesk';
+    font-family: 'Neue Montreal';
     color: whitesmoke;
 }
 

@@ -683,7 +683,8 @@ main {
     font-size: 9px;
     padding-top: 2px;
     padding-bottom: 1vh;
-    font-family: 'Grafier', italic;
+    font-family: 'Grafier';
+    font-weight: lighter;
   }
 }
 
