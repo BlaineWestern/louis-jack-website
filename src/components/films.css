@@ -1,7 +1,7 @@
 .films-wrapper {
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
 }
 
 .film-wrapper {
@@ -15,7 +15,7 @@
 
 .film-info {
     color: whitesmoke;
-    font-family: 'Aktiv Grotesk';
+    font-family: 'Neue Montreal';
     overflow: auto;
     height:100%;
 }
@@ -31,13 +31,9 @@
     text-align: left;
     text-decoration: none;
     cursor: pointer;
-    font-family: 'Aktiv Grotesk';
+    font-family: 'Neue Montreal';
     margin-bottom: 10px;
 }
-
-/* .film-titles button:hover {
-text-decoration: underline;
-} */
 
 .film-titles button:focus {
     outline: 0;
@@ -93,8 +89,22 @@ text-decoration: underline;
 }
 
 @media only screen and (max-width: 780px) {
+    /* .films-wrapper {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 91vh;
+        background-color: black;
+        z-index: 50;
+    } */
+
     .film-titles {
         width: 25vw;
         overflow: auto;
+    }
+
+    .film-info-content-visible{
+        padding-left: 10px;
     }
 }
