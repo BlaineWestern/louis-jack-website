@@ -24,28 +24,29 @@ export default function about() {
   return (
     <Layout>
       <SEO title="About" />
-      <div className="biography-container">
-        <div className="biography">
-          <a
-            className="mailing-list-link"
-            href={data.allContentfulAbout.edges[0].node.mailingListUrl}
-            target="_blank"
-          >
-            NEWSLETTER &nbsp; &#10149;
-          </a>
-          <br />
-          <br />
-          <p className="about-title">BIOGRAPHY:</p>
-          <div
-            className="biography-text"
-            dangerouslySetInnerHTML={{
-              __html:
-                data.allContentfulAbout.edges[0].node.biography
-                  .childMarkdownRemark.html,
-            }}
-          />
+        <div className="biography-container">
+          <div className="biography">
+            <a
+              className="mailing-list-link"
+              href={data.allContentfulAbout.edges[0].node.mailingListUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              NEWSLETTER &nbsp; &#10149;
+            </a>
+            <br />
+            <br />
+            <p className="about-title">BIOGRAPHY:</p>
+            <div
+              className="biography-text"
+              dangerouslySetInnerHTML={{
+                __html:
+                  data.allContentfulAbout.edges[0].node.biography
+                    .childMarkdownRemark.html,
+              }}
+            />
+          </div>
         </div>
-      </div>
     </Layout>
   )
 }

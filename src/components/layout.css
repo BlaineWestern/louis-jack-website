@@ -631,7 +631,7 @@ pre tt:after {
   font-family: 'Grafier', italic;
 }
 
-main {
+.main {
   background-color: black;
   position: fixed;
   top: 50%;
@@ -669,14 +669,15 @@ main {
     font-size: 15px;
   }
 
-  main {
+  .main {
     background-color: black;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 35px;
+    left: 0px;
+    transform: translate(0%, 0%);
     width: 100vw;
-    height: calc(100vw * .5625);
+    height: 85vh;
+    /* height: calc(100vw * .5625); */
   }
 
   .footer {
@@ -703,11 +704,11 @@ main {
 }
 
 
-@media only screen and (max-height: 480px) {
-  main {
+/* @media only screen and (max-height: 480px) {
+  .main {
     background-color: black;
     position: fixed;
-    top: 50%;
+    top: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(80vh * 1.777);
@@ -724,4 +725,4 @@ main {
   a{ 
     font-size: 15px;
   }
-}
+} */

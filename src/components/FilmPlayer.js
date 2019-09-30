@@ -240,7 +240,7 @@ export default class FilmPlayer extends Component {
           </button>
           <div className="range-slider">
             <input
-              class="input-range"
+              className="input-range"
               type="range"
               step="any"
               min={0}

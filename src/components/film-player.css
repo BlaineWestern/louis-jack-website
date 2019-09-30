@@ -146,6 +146,18 @@
 }
 
 @media only screen and (max-width: 780px) {
+    .video-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:100vw;
+        height: calc(100vw * .5625);
+        border-style: solid;
+        border-width: 2px;
+        border-color: whitesmoke; 
+    }
+
     .expand-button img {
         width: 17px;
         height: 17px;
