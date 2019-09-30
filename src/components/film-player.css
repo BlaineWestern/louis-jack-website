@@ -146,6 +146,12 @@
 }
 
 @media only screen and (max-width: 780px) {
+    .films-wrapper{
+        height: 100%;
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
     .video-container{
         position: absolute;
         top: 50%;
@@ -184,9 +190,13 @@
         right: 12px;
     }
 
+    .film-description {
+        padding: 45px 20px 0px 20px;
+    }
+
 }
 
-@media only screen and (max-height: 480px) {
+/* @media only screen and (max-height: 480px) {
     .expand-button img {
         width: 17px;
         height: 17px;
@@ -206,4 +216,4 @@
         width: 25px;
         height: 25px;
     }
-  }
+  } */
