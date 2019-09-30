@@ -21,19 +21,19 @@ export default function contact() {
   return (
     <Layout>
       <SEO title="Contact" />
-      <div className="contact-container">
-        <div className="contact">
-          <div className="contact-unit-container">
-            {data.allContentfulContact.edges.map(x => (
-              <div className="contact-unit">
-                <p>
-                  {x.node.platform.toUpperCase()}:<br /> {x.node.address}
-                </p>
-              </div>
-            ))}
+        <div className="contact-container">
+          <div className="contact">
+            <div className="contact-unit-container">
+              {data.allContentfulContact.edges.map(x => (
+                <div className="contact-unit">
+                  <p>
+                    {x.node.platform.toUpperCase()}:<br /> {x.node.address}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
     </Layout>
   )
 }

@@ -23,9 +23,7 @@ const Film = props => {
   return (
     <Layout>
       <SEO title={props.data.contentfulFilms.title} />
-      <div className="main">
-        <FilmPlayer data={props.data} />
-      </div>
+      <FilmPlayer data={props.data} />
     </Layout>
   )
 }

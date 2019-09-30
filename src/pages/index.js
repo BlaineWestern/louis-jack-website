@@ -8,14 +8,16 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ReactPlayer
-      playing={true}
-      loop={true}
-      url={"https://vimeo.com/louisjack/showreelwebsite"}
-      width="100%"
-      height="100%"
-    />
-    <LandingTitle />
+    <div className="video-container">
+      <ReactPlayer
+        playing={true}
+        loop={true}
+        url={"https://vimeo.com/louisjack/showreelwebsite"}
+        width="100%"
+        height="100%"
+      />
+      <LandingTitle />
+    </div>
   </Layout>
 )
 

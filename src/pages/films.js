@@ -27,9 +27,7 @@ export default function films() {
   return (
     <Layout>
       <SEO title="Films" />
-      <div className="main">
       <Films data={data} />
-      </div>
     </Layout>
   )
 }
