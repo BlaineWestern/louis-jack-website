@@ -703,3 +703,14 @@ pre tt:after {
   }
 }
 
+.video-player {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-player iframe {
+  width: 100%;
+  height: 100%;
+}
