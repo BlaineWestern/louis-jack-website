@@ -172,11 +172,9 @@ export default class FilmPlayer extends Component {
   render() {
     const {
       playing,
-      controls,
       light,
       volume,
       muted,
-      loop,
       played,
       playbackRate,
       pip,
@@ -197,9 +195,9 @@ export default class FilmPlayer extends Component {
             ref={this.ref}
             pip={pip}
             playing={playing}
-            controls={controls}
+            controls={false}
             light={light}
-            loop={loop}
+            loop={true}
             playbackRate={playbackRate}
             volume={volume}
             muted={muted}
