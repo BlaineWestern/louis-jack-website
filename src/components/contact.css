@@ -18,8 +18,21 @@
     width: 20vw;       
 }
 
+.links{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 780px) {
+    .contact-container{
+        padding-left: 3.9vw; 
+    }
     .contact-unit {
-        width: 221px;       
+        width: 221px; 
+        padding-left: 0;      
     }
 }

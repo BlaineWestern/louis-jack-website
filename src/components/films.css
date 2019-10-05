@@ -88,23 +88,65 @@
     text-decoration: underline;
 }
 
+.mobile-film-titles{
+    display: none;
+}
 @media only screen and (max-width: 780px) {
-    /* .films-wrapper {
-        display: flex;
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        height: 91vh;
+    .mobile-film-titles{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
         background-color: black;
-        z-index: 50;
-    } */
-
+        display: block;
+        border-bottom: solid 2px whitesmoke;
+        padding: 1vw;
+    }
+    .mobile-film-titles-button{
+        padding-top: 10px;
+    }
+    .film-info-content-visible{
+        margin-top: 30px;
+    }
+    .mobile-film-titles button{
+        display: block;
+        border: none;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Neue Montreal';
+        margin-bottom: 10px;
+        margin-left: 2.8vw;
+    }
+    .mobile-film-titles button:focus {
+        outline: 0;
+    }
+    .film-info-content-visible{
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        z-index: 5;
+    }
+    .titles-open{
+        display: block;
+    }
+    .titles-open button{
+        padding: 0;
+        margin-left: 3.9vw;
+    }
+    .mobile-film-titles-button{
+        color: whitesmoke;
+        background: black;
+        cursor: pointer;
+        font-family: 'Neue Montreal';
+    }
+    .film-info-content-invisible{
+        display: none;
+    }
     .film-titles {
-        width: 25vw;
-        overflow: auto;
+        display: none;
     }
 
-    .film-info-content-visible{
-        padding-left: 10px;
+    .titles-closed{
+        display: none;
     }
 }

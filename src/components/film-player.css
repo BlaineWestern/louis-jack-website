@@ -185,6 +185,7 @@
     }
 
     .expand-button {
+        padding: 0px;
         position: absolute;
         bottom: -15px;
         right: 12px;
@@ -196,24 +197,3 @@
 
 }
 
-/* @media only screen and (max-height: 480px) {
-    .expand-button img {
-        width: 17px;
-        height: 17px;
-    }
-
-    .info-toggle-button img {
-        width: 17px;
-        height: 17px;
-    }
-
-    .info-toggle-button-close img {
-        width: 17px;
-        height: 17px;
-    }
-
-    .pause-play-button img {
-        width: 25px;
-        height: 25px;
-    }
-  } */

@@ -1,5 +1,5 @@
 import React from "react"
-import ReactPlayer from "react-player"
+import Vimeo from "@u-wave/react-vimeo"
 import LandingTitle from "../components/LandingTitle"
 
 import Layout from "../components/layout"
@@ -9,12 +9,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="video-container">
-      <ReactPlayer
-        playing={true}
-        loop={true}
-        url={"https://vimeo.com/louisjack/showreelwebsite"}
+      <Vimeo
+        className="video-player"
+        video="360773446"
+        autoplay
         width="100%"
-        height="100%"
+        loop="true"
+        controls="false"
       />
       <LandingTitle />
     </div>
