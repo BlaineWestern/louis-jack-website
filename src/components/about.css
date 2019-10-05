@@ -36,5 +36,6 @@
 @media only screen and (max-width: 780px) {
     .biography {
         padding-left: 5.9vw;
+        font-size: 15px;
     }
 }
