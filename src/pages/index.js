@@ -12,7 +12,9 @@ const IndexPage = () => (
       <ReactPlayer
         playing={true}
         loop={true}
-        url={"https://vimeo.com/louisjack/showreelwebsite"}
+        url={
+          "https://player.vimeo.com/video/360773446?api=1&background=1&autoplay=1&loop=1"
+        }
         width="100%"
         height="100%"
       />

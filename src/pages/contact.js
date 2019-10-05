@@ -24,6 +24,9 @@ export default function contact() {
         <div className="contact-container">
           <div className="contact">
             <div className="contact-unit-container">
+              <a href="https://www.instagram.com/louisjackhs/" className="links">INSTAGRAM &nbsp; &#10149;</a><br/>
+              <a href="https://vimeo.com/louisjack" className="links">VIMEO &nbsp; &#10149;</a><br/>
+              <br/>
               {data.allContentfulContact.edges.map(x => (
                 <div className="contact-unit">
                   <p>
