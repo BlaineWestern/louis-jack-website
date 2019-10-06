@@ -30,9 +30,11 @@
 @media only screen and (max-width: 780px) {
     .contact-container{
         padding-left: 3.9vw; 
+        font-size: 15px;
     }
     .contact-unit {
         width: 221px; 
-        padding-left: 0;      
+        padding-left: 0;
+        font-size: 15px;      
     }
 }
