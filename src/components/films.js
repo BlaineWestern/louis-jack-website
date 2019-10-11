@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import "./films.css"
+import playbutton from "../images/play-button.svg"
 
 export default class films extends Component {
   constructor(props) {
@@ -92,7 +93,7 @@ export default class films extends Component {
             >
               <div className="film-unit-body">
                 <p>"{x.node.title.toUpperCase()}"</p>
-                <Link to={`/films/${x.node.slug}`}>WATCH &nbsp; &#9654;</Link>
+                <Link to={`/films/${x.node.slug}`}><img src={playbutton} /></Link>
                 <br />
                 <br />
                 <p>DESCRIPTION:</p>
