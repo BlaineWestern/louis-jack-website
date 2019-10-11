@@ -77,6 +77,10 @@
     overflow: auto;
 }
 
+.film-unit-body a img{
+    margin: 0;
+}
+
 .film-info-content-visible a {
     position: inherit;
     color: whitesmoke;

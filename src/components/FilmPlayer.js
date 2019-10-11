@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import ReactPlayer from "react-player"
+import ReactTimeout from "react-timeout"
 import { findDOMNode } from "react-dom"
 import screenfull from "screenfull"
 
@@ -12,7 +13,7 @@ import info from "../images/info.svg"
 import "./film-player.css"
 import "./seek-slider.css"
 
-export default class FilmPlayer extends Component {
+class FilmPlayer extends Component {
   state = {
     mouseMoving: false,
     infoVisibility: false,
@@ -269,3 +270,5 @@ export default class FilmPlayer extends Component {
     )
   }
 }
+
+export default ReactTimeout(FilmPlayer)
