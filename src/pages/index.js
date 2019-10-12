@@ -11,7 +11,7 @@ const IndexPage = () => (
     <div className="video-container">
       <Vimeo
         className="video-player"
-        video="360773446"
+        video="365937618"
         autoplay={true}
         width="100%"
         loop="true"

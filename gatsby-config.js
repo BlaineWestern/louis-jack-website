@@ -6,12 +6,6 @@ module.exports = {
     image: "./src/images/louis-icon.png",
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-page-transitions",
-      options: {
-        transitionTime: 500,
-      },
-    },
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
