@@ -93,7 +93,9 @@ export default class films extends Component {
             >
               <div className="film-unit-body">
                 <p>"{x.node.title.toUpperCase()}"</p>
-                <Link to={`/films/${x.node.slug}`}><img src={playbutton} /></Link>
+                <Link className="film-link" to={`/films/${x.node.slug}`}>
+                  <img src={playbutton} />
+                </Link>
                 <br />
                 <br />
                 <p>DESCRIPTION:</p>
