@@ -13,7 +13,7 @@ const IndexPage = () => (
         className="video-player"
         video="365937618"
         autoplay={true}
-        width="100%"
+        width="110%"
         loop="true"
         controls="false"
       />
