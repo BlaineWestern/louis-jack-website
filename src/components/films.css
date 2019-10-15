@@ -94,10 +94,9 @@
 
 .film-link img{
     transition: 0.3s;
-    opacity: .8;
+    opacity: .85;
 }
 .film-link:hover img{
-    transform: translate(5px, 0);
     opacity: 1;
 }
 
@@ -107,7 +106,7 @@
 @media only screen and (max-width: 780px) {
     .mobile-film-titles{
         position: absolute;
-        z-index: 10;
+        z-index: 400;
         width: 100%;
         background-color: black;
         display: block;
